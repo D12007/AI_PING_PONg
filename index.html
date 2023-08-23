@@ -1,0 +1,104 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ping Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <div id="h-1">
+            <h3>AI PING PONG GAME</h3>
+        </div>
+        <br><br>
+        <button class="btn" type="button" data-toggle="modal" data-target="#mymodal">
+            <strong>INSTRUCTIONS</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+        <br><br>
+        <button class="btn" type="button" onclick="startGame()" id="start">
+            <strong>PLAY GAME</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+        <br><br>
+        <button class="btn" type="button" onclick="RestartGame()" id="RESTART">
+            <strong>RESTART</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+
+        <br><br>
+        <h3 id="status" class=""></h3>
+        <br><br>
+        <div id="canvas"></div>
+        <div id="canvas_1"></div>
+
+        <br><br>
+        <div id="mymodal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>INSTRUCTIONS</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h1>1. First keep your laptop screen straight</h1>
+                        <h1>2. Move yourself approximately 3-4 feet away from the laptop</h1>
+                        <h1>3. Move your right wrist in an ascending and decending manner ,ared dot should appear on
+                            your right wrist </h1>
+                        <h1>4. Now press the play button ,and again move your self 3-4 feet away from laptop</h1>
+                        <h1>5. The red paddle is your paddle it will move according to movement of your right wrist</h1>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn" type="button" onclick="startGame()" id="start">
+            <strong>
+                <h4>source-code:<a href="https://github.com/linuk">Linuk</a>|| Game credit-Mario</h4>
+            </strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>
